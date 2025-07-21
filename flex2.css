@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #d61120;
+  margin-top: 20px;
+  color: white;
+  padding: 0px 20px 0px 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wrapper-left-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.wrapper-right-section {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-right-section > img {
+  margin-right: 5px;
+  width: 20px;
+}
+
+/* menu */
+.menu-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px 0px 20px;
+}
+
+.header-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header-text > div {
+  display: flex;
+  align-items: center;
+}
+
+.NetBand {
+  font-size: 30px;
+  font-weight: 800;
+  color: #d61120;
+}
+
+/* banner image */
+.img-bg {
+  background-image: url("./img/Group\ 12.png");
+  display: flex;
+}
+.img-bg-left {
+  background: rgba(128, 128, 128, 0.225);
+  width: 50%;
+  padding: 70px 0px 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.payment {
+  display: flex;
+  align-items: center;
+}
+
+.journey {
+  font-size: 96px;
+  font-weight: 800;
+  color: white;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.fast-speed {
+  font-size: 36px;
+  color: white;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.amount {
+  font-size: 64px;
+  color: #d61120;
+  font-weight: 800;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+
+.month {
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.get-started {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 40px 20px 40px;
+  border-radius: 10px;
+  border: none;
+  background: #d61120;
+  color: white;
+}
+
+/* services section */
+.services {
+  background: #f8f8f8;
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper-2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.service {
+  color: #F4222B;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.shows {
+  font-size: 32px;
+  font-weight: 700;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.shows2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-block-start: 0px;
+  margin-block-end: 20px;
+}
+
+.service-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.service-list > div {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 50px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 319px;
+  height: 372px;
+}
+.service-list > div > img {
+  width: 110px;
+  height: 99px;
+  padding: 0px 20px 0px 20px;
+}
+
+.service-list > div > p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 20px 20px 20px 20px;
+}
+
+.service-list > div > p:nth-child(3) {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0px 20px 0px 20px;
+}
+
+.service-list .wifi-wrapper, .wifi, .wifi-msg1{
+  background: #D61120;
+  color: white;
+}
+
+
+
+
+
+
+/* Media query */
+@media screen and (max-width: 950px) {
+  .header-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    font-size: 15px;
+  }
+  .header-img > img {
+    width: 30px;
+  }
+  .img-bg-left {
+    width: 100%;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+  }
+  .service-list {
+    gap: 10px;
+  }
+  .service-list > div {
+    width: 220px;
+    height: 280px;
+    padding: 30px 10px 0px 10px;
+  }
+  .service-list > div > img {
+    width: 60px;
+    height: 60px;
+    padding: 0px 10px 0px 10px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .header-text {
+    display: none;
+  }
+  .service-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-list > div {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    padding: 20px 10px 0px 10px;
+  }
+  .service-list > div > img {
+    width: 50px;
+    height: 50px;
+    padding: 0px 5px 0px 5px;
+  }
+}
